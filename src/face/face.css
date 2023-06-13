@@ -1,0 +1,15 @@
+.head-face{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 66px 99px 32px 91px;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
