@@ -4,9 +4,11 @@
     align-items: flex-start;
     justify-content: center;
     padding: 93px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     gap: 2px;
     font-family: 'Mulish', sans-serif;
+    width: 1440px;
+    height:460px;
 }
 .location-area{
     width: 425px;
@@ -150,7 +152,7 @@
     align-items: center;
 }
     
-.search-button-cont{
+.search-button > button{
     display: flex;
     flex-direction: row;
     align-items: center;
