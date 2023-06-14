@@ -1,4 +1,6 @@
 import './nav.css'
+
+import SearchIcon from '../icons/SearchIcon'
 export default function Nav() {
     return (
         <nav className='nav'>
@@ -9,7 +11,7 @@ export default function Nav() {
                 <p className='location'>Add location</p>
                 <p className='guests'>Add guests</p>
                 <div className='box-lupa'>
-                    <img src="src\icons\search.svg" alt="lupa" />
+                    <SearchIcon/>
                 </div>
             </div>
         </nav>
