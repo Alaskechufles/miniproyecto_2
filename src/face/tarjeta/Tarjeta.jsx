@@ -2,12 +2,13 @@ import { Fragment } from 'react'
 import './tarjeta.css'
 import Star from '../../icons/star-fill.jsx'
 
-export default function Tarjeta() {
+
+export default function Tarjeta(prop) {
     return (
         <Fragment>
             <div className='tarjeta'>
                 <div className='box-img'>
-                    <img className='img' src="https://placekitten.com/400/909" alt="cuartos" />
+                    <img className='img' src={prop.imgs} alt="cuartos" />
                 </div>
                 <div className='type'>
                     <div className='super-host'>
