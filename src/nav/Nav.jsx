@@ -107,7 +107,7 @@ export default function Nav() {
                             <div className="guests-area">
                                 <div className="guests-head">
                                     <h2>Guests</h2>
-                                    <input type="text" placeholder="Add guests" value={numGuest} />
+                                    <input type="text" placeholder="Add guests" defaultValue={numGuest} />
                                 </div>
                                 <div className="guests-options">
                                     <div className="adults">
