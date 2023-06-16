@@ -19,6 +19,27 @@ import '../face/tarjeta/tarjeta.css'
 
 
 export default function Nav() {
+
+    const [countA, setCount] = useState(0);
+    const buttonSum = () => {
+        setCount(countA + 1);
+    };
+    const buttonRed = () => {
+        setCount(countA - 1);
+    };
+    const [countC, setCountC] = useState(0);
+    const buttonSumC = () => {
+        setCountC(countC + 1);
+    };
+    const buttonRedC = () => {
+        setCountC(countC - 1);
+    };
+    let numG = countA + countC
+
+    let numGuest = numG ? `${numG} guests` : "Add guests";
+
+
+
     const [isActive, setIsActive] = useState(false);
     const toggleClass = () => {
         setIsActive(!isActive);
@@ -39,7 +60,13 @@ export default function Nav() {
                             <div className="location-area">
                                 <div className="location-head">
                                     <h2>LOCATION</h2>
-                                    <input type="text" value="Helsinki, Finland" placeholder="Add location" />
+                                    <input type="text" placeholder="Add location" list="options" />
+                                    <datalist id="options">
+                                        <option value="Helsinki, Finland"></option>
+                                        <option value="Turku, Finland"></option>
+                                        <option value="Oulu, Finland"></option>
+                                        <option value="Vaasa, Finland"></option>
+                                    </datalist>
                                 </div>
                                 <div className="location-options">
 
@@ -80,25 +107,25 @@ export default function Nav() {
                             <div className="guests-area">
                                 <div className="guests-head">
                                     <h2>Guests</h2>
-                                    <input type="text" placeholder="Add guests" />
+                                    <input type="text" placeholder="Add guests" value={numGuest} />
                                 </div>
                                 <div className="guests-options">
                                     <div className="adults">
                                         <h2>Adults</h2>
                                         <h3>Ages 13 or above</h3>
                                         <div className="counter">
-                                            <button className="minus">_</button>
-                                            <p>0</p>
-                                            <button>+</button>
+                                            <button className="minus" onClick={buttonRed}>_</button>
+                                            <p>{countA}</p>
+                                            <button onClick={buttonSum}>+</button>
                                         </div>
                                     </div>
                                     <div className="children">
                                         <h2>Children</h2>
                                         <h3>Ages 2 to 12</h3>
                                         <div className="counter">
-                                            <button className="minus">_</button>
-                                            <p>0</p>
-                                            <button>+</button>
+                                            <button className="minus" onClick={buttonRedC}>_</button>
+                                            <p>{countC}</p>
+                                            <button onClick={buttonSumC}>+</button>
                                         </div>
                                     </div>
                                 </div>
