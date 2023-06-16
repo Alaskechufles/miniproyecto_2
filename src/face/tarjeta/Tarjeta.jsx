@@ -19,7 +19,7 @@ export default function Tarjeta(prop) {
                     </div>
                     <div className='rate'>
                         <div className='box-star'>
-                            <Star/>
+                            <Star />
                         </div>
                         <p>4.40</p>
                     </div>

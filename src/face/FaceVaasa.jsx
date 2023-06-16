@@ -3,10 +3,7 @@ import './face.css'
 import Tarjeta from './tarjeta/Tarjeta'
 import SearchIcon from '../icons/SearchIcon';
 
-
-
-
-const arrImagesHel = ['src\\imagenes\\img-1.png', 'src\\imagenes\\img-2.png', 'src\\imagenes\\img-3.png', 'src\\imagenes\\img-4.png', 'src\\imagenes\\img-5.png', 'src\\imagenes\\img-6.png',];
+const arrImagesHel = ['src\\imagenes\\imgs-vaasa\\img-v-1.webp', 'src\\imagenes\\imgs-vaasa\\img-v-2.webp', 'src\\imagenes\\imgs-vaasa\\img-v-3.webp', 'src\\imagenes\\imgs-vaasa\\img-v-4.webp', 'src\\imagenes\\imgs-vaasa\\img-v-5.webp', 'src\\imagenes\\imgs-vaasa\\img-v-6.webp',];
 
 
 export default function Face(prop) {

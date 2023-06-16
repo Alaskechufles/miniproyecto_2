@@ -1,6 +1,6 @@
 
 import './App.css'
-import Face from './face/Face'
+/* import Face from './face/Face' */
 import Nav from './nav/Nav'
 
 
@@ -12,7 +12,7 @@ function App() {
       <div className="main">
 
         <Nav />
-        <Face />
+        {/* <Face /> */}
 
       </div>
     </>

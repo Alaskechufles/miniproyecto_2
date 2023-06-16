@@ -2,6 +2,9 @@ import { Fragment } from "react";
 import "./search.css"
 import Geo from '../icons/Geo.jsx'
 import SearchIcon from "../icons/SearchIcon";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Face from "../face/Face";
+import FaceTurku from "../face/FaceTurku";
 export default function Search(prop) {
 
     return (
@@ -15,12 +18,29 @@ export default function Search(prop) {
                             <input type="text" value="Helsinki, Finland" placeholder="Add location" />
                         </div>
                         <div className="location-options">
-                            <div className="option">
-                                <div className="box-icon-search">
-                                    <Geo />
-                                </div>
-                                <h2>Helsinki, Finland</h2>
-                            </div>
+                            <BrowserRouter>
+                                <Link to="/" >
+                                    <div className="option">
+                                        <div className="box-icon-search">
+                                            <Geo />
+                                        </div>
+                                        <h2>Helsinki, Finland</h2>
+                                    </div>
+                                </Link>
+                                <Link to="/turku" >
+                                    <div className="option">
+                                        <div className="box-icon-search">
+                                            <Geo />
+                                        </div>
+                                        <h2>Helsinki, Finland</h2>
+                                    </div>
+                                </Link>
+                                <Routes>
+                                    <Route exact path="/" element={<Face />} />
+                                    <Route exact path="/turku" element={<FaceTurku />} />
+                                </Routes>
+                            </BrowserRouter>
+
                             <div className="option">
                                 <div className="box-icon-search">
                                     <Geo />

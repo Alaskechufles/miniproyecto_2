@@ -3,13 +3,10 @@ import './face.css'
 import Tarjeta from './tarjeta/Tarjeta'
 import SearchIcon from '../icons/SearchIcon';
 
+const arrImagesHel = ['src\\imagenes\\imgs-turku\\img-t-1.webp', 'src\\imagenes\\imgs-turku\\img-t-2.webp', 'src\\imagenes\\imgs-turku\\img-t-3.webp', 'src\\imagenes\\imgs-turku\\img-t-4.webp', 'src\\imagenes\\imgs-turku\\img-t-5.webp', 'src\\imagenes\\imgs-turku\\img-t-6.webp',];
 
 
-
-const arrImagesHel = ['src\\imagenes\\img-1.png', 'src\\imagenes\\img-2.png', 'src\\imagenes\\img-3.png', 'src\\imagenes\\img-4.png', 'src\\imagenes\\img-5.png', 'src\\imagenes\\img-6.png',];
-
-
-export default function Face(prop) {
+export default function FaceTurku(prop) {
     return (
         <Fragment>
             <nav className='nav'>
@@ -25,7 +22,7 @@ export default function Face(prop) {
                 </button>
             </nav>
             <div className="head-face">
-                <h1 className="subtitle-face">Stays in Finland</h1>
+                <h1 className="subtitle-face">Stays in Turku - Finland</h1>
                 <p className="number-face">12+ stays</p>
             </div>
             <div className="tarjetas">
