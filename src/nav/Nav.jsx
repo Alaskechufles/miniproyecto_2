@@ -36,7 +36,7 @@ export default function Nav() {
     };
     let numG = countA + countC
 
-    let numGuest = numG ? `${numG} guests` : "Add guests";
+    /*  let numGuest = numG ? `${numG} guests` : "Add guests"; */
 
 
 
@@ -107,7 +107,7 @@ export default function Nav() {
                             <div className="guests-area">
                                 <div className="guests-head">
                                     <h2>Guests</h2>
-                                    <input type="text" placeholder="Add guests" defaultValue={numGuest} />
+                                    <input type="text" placeholder="Add guests" defaultValue={numG + "guests"} />
                                 </div>
                                 <div className="guests-options">
                                     <div className="adults">
